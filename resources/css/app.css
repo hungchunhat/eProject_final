@@ -1,0 +1,138 @@
+.table {
+    border-collapse: collapse;
+    width: 100%; /* Bảng chiếm 100% chiều rộng */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border-radius: 15px; /* Bo tròn bảng */
+    overflow: hidden; /* Đảm bảo không tràn viền */
+}
+
+.table thead {
+    background-color: #f8f9fa; /* Màu nền nhẹ */
+}
+
+.table th, .table td {
+    padding: 12px 15px; /* Khoảng cách nội dung */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1; /* Hiệu ứng hover */
+}
+
+/* Tùy chỉnh nút */
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border: none;
+    color: #212529;
+}
+
+.btn:hover {
+    opacity: 0.8; /* Hiệu ứng hover nhẹ cho nút */
+}
+#btn-login:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+#clickable {
+    cursor: pointer;
+}
+table .blink-red {
+    background-color: yellowgreen;!important;
+    color: white;!important;
+    transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển màu mượt */
+}
+.nav-tabs .nav-link.active {
+    color: #e03a3c !important; /* Màu chữ đỏ cho tab đang active */
+}
+.nav-tabs .nav-link {
+    color: black; /* Màu đen cho tab không active */
+    font-weight: normal; /* Font chữ bình thường */
+}
+.btn-fav {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/* Ô vuông Status */
+.status-badge {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    width: fit-content;/* Màu nền */
+    color: black; /* Màu chữ */
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px; /* Border bo tròn */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+.ticker {
+    width: 100%;
+    background-color: #e03a3c;
+    color: #fff;
+    padding: 1px 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.ticker p {
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+    padding-left: 100%;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+input.form-control:focus,
+select.form-select:focus,
+textarea.form-control:focus
+{
+    border-color: #e03a3c !important; /* Đặt viền màu đỏ */
+    box-shadow: 0 0 5px #e03a3c; /* Hiệu ứng box-shadow màu đỏ */
+    outline: none; /* Ẩn outline mặc định */
+}
+.form-btn {
+    background-color: black; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+}
+.form-btn:hover {
+    background-color: #333; /* Màu hơi sáng hơn khi hover */
+    color: white; /* Giữ màu chữ trắng */
+}
+.form-btn-active {
+    background-color: #333; /* Màu hơi sáng hơn khi hover */
+    color: white; /* Giữ màu chữ trắng */
+}
+.form-btn-r {
+    background-color: #df1529; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+}
+.form-btn-r:hover {
+    background-color: #e03a3c; /* Màu hơi sáng hơn khi hover */
+    color: white; /* Giữ màu chữ trắng */
+}
+.status-badge-p {
+    position: relative;
+    bottom: -10px;
+    left: 0px;
+    padding: 5px 10px;
+    width: fit-content;/* Màu nền */
+    color: black; /* Màu chữ */
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px; /* Border bo tròn */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
